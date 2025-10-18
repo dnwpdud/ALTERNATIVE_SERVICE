@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.mokcoding.mysite.persistence.OutingMapper"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.web.as.domain.Outing"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.security.SecurityConfig"/>
+    <fullyQualifiedTypeName name="com.web.as.persistence.OutingMapper"/>
+    <fullyQualifiedTypeName name="com.web.as.domain.OutingVO"/>
+</qualifiedTypeNameHistroy>

@@ -1,16 +1,14 @@
 package com.web.as.controller;
 
-import java.util.Date;
-
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import com.web.as.domain.Outing;
+import com.web.as.domain.OutingVO;
 import com.web.as.persistence.OutingMapper;
 
 import lombok.extern.log4j.Log4j;
@@ -24,11 +22,37 @@ public class OutingController {
 	private OutingMapper outingService;
 	
 	@GetMapping("/list")
-	public void list (Model model, Date outingDate) {
+	public void list() {
 		log.info("list()");
+	}
+	
+	// register.jsp 페이지 호출
+		@GetMapping("/register")
+		public void registerGET() {
+			log.info("registerGET()");
+		}
+	
+	@GetMapping("/detail")
+	public void detail (Model model, String outingDate) {
+		log.info("detail()");
 		log.info("outingDate : " + outingDate);
 		
-		List<Outing> outingList = outingService.selectOne(outingDate);
+		List<OutingVO> outingList = outingService.selectOne(outingDate);
+		log.info("outingList : " + outingList);
 		model.addAttribute("outingList", outingList);
 	}
+	
+	@GetMapping("/detailRange")
+	public void detailRange (Model model, @RequestParam("startDate") String startDate, 
+			@RequestParam("endDate") String endDate) {
+		log.info("detailRange()");
+		log.info("startDate : " + startDate);
+		log.info("endDate : " + endDate);
+		
+		List<OutingVO> outingList = outingService.selectByDateRange(startDate, endDate);
+		log.info("outingList : " + outingList);
+		model.addAttribute("outingList", outingList);
+	}
+	
+
 }

@@ -3,11 +3,12 @@ package com.web.as.service;
 import java.util.Date;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.web.as.domain.Outing;
+import com.web.as.domain.OutingVO;
 import com.web.as.persistence.OutingMapper;
 
 import lombok.extern.log4j.Log4j;
@@ -18,13 +19,24 @@ public class OutingServiceImple implements OutingService {
 	
 	@Autowired
 	private OutingMapper outingMapper;
-	
+
 	@Override
-	public List<Outing> getOutings(Date outingDate) {
-		log.info("getAllBoards()");
-		List<Outing> OutingList = outingMapper.selectOne(outingDate);
+	public List<OutingVO> getOutings(String outingDate) {
+		log.info("getOutings()");
+		log.info("outingDate : " + outingDate);
+		List<OutingVO> OutingList = outingMapper.selectOne(outingDate);
 		log.info("목록 : " + OutingList);
 		return OutingList;
-	} // end getAllBoards()
+	}
+
+	@Override
+	public List<OutingVO> selectByDateRange(String startDate, String endDate) {
+		log.info("selectByDateRange()");
+		log.info("startDate : " + startDate);
+		log.info("endDate : " + endDate);
+		List<OutingVO> OutingList = outingMapper.selectByDateRange(startDate, endDate);
+		log.info("OutingList : " + OutingList);
+		return OutingList;
+	}
 	
 }
