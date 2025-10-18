@@ -1,0 +1,34 @@
+package com.mokcoding.mysite.controller;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.mokcoding.mysite.domain.Outing;
+import com.mokcoding.mysite.persistence.OutingMapper;
+import com.mokcoding.mysite.service.MemberService;
+
+import lombok.extern.log4j.Log4j;
+
+@Controller
+@RequestMapping(value = "/outing") 
+@Log4j
+public class OutingController {
+	
+	@Autowired
+	private OutingMapper outingService;
+	
+	@GetMapping("/list")
+	public void list (Model model, Date outingDate) {
+		log.info("list()");
+		log.info("outingDate : " + outingDate);
+		
+		List<Outing> outingList = outingService.selectOne(outingDate);
+		model.addAttribute("outingList", outingList);
+	}
+}

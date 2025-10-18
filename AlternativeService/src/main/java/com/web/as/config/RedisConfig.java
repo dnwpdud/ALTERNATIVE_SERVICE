@@ -1,0 +1,44 @@
+package com.web.as.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+
+//Redis 관련 설정을 정의하는 설정 클래스
+@Configuration
+public class RedisConfig {
+
+ // Redis 서버와의 연결을 위한 JedisConnectionFactory 빈 정의
+ @Bean
+ public JedisConnectionFactory jedisConnectionFactory() {
+     // Redis 연결 설정 객체 생성 (Standalone: 단일 인스턴스 환경)
+     RedisStandaloneConfiguration config = new RedisStandaloneConfiguration();
+     
+     // Redis 서버 호스트명 설정 (로컬 호스트로 지정)
+     config.setHostName("localhost");
+     
+     // Redis 서버 포트 설정 (기본 포트: 6379)
+     config.setPort(6379);
+     
+     // 필요 시 Redis 비밀번호 설정 가능
+     // config.setPassword("비밀번호");
+
+     // 설정 정보를 기반으로 JedisConnectionFactory 인스턴스 생성
+     return new JedisConnectionFactory(config);
+ }
+
+ // RedisTemplate 빈 정의 (Redis와 데이터 입출력을 담당하는 핵심 객체)
+ @Bean
+ public RedisTemplate<String, Object> redisTemplate() {
+     RedisTemplate<String, Object> template = new RedisTemplate<>();
+     
+     // Redis 연결 팩토리를 설정 (위에서 정의한 빈 사용)
+     template.setConnectionFactory(jedisConnectionFactory());
+     
+     // 기타 설정 (필요에 따라 직렬화 방식 등 설정 가능)
+     return template;
+ }
+}
+
