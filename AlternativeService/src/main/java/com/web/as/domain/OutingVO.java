@@ -14,7 +14,7 @@ import lombok.ToString;
 public class OutingVO {
 	private int outingId;
 	private int crewId;
-	private String serviceNo;
+	private String crewNo;
 	private String memberName;
 	private String outingType;
 	private String reason;

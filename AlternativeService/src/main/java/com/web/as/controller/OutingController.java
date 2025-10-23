@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.web.as.domain.OutingVO;
 import com.web.as.persistence.OutingMapper;
+import com.web.as.service.OutingService;
 
 import lombok.extern.log4j.Log4j;
 
@@ -19,7 +20,7 @@ import lombok.extern.log4j.Log4j;
 public class OutingController {
 	
 	@Autowired
-	private OutingMapper outingService;
+	private OutingService outingService;
 	
 	@GetMapping("/list")
 	public void list() {
@@ -37,7 +38,7 @@ public class OutingController {
 		log.info("detail()");
 		log.info("outingDate : " + outingDate);
 		
-		List<OutingVO> outingList = outingService.selectOne(outingDate);
+		List<OutingVO> outingList = outingService.getOutings(outingDate);
 		log.info("outingList : " + outingList);
 		model.addAttribute("outingList", outingList);
 	}

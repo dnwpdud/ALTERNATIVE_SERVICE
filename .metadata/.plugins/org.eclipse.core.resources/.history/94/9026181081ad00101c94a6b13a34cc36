@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.as.persistence.OutingMapper">
+	<resultMap type="com.web.as.domain.OutingVO"
+		id="outingResultMap">
+		<id property="outingId" column="OUTING_ID" /> 
+		<result property="crewId" column="CREW_ID" />
+    	<result property="serviceNo" column="SERVICE_NO" />
+    	<result property="memberName" column="MEMBER_NAME" />
+    	<result property="outingType" column="OUTING_TYPE" />
+    	<result property="reason" column="REASON" />
+    	<result property="outingDate" column="OUTING_DATE" />
+    	<result property="dayOfWeek" column="DAY_OF_WEEK" />
+    	<result property="remarks" column="REMARKS" />
+    	<result property="startDate" column="START_DATE" />
+    	<result property="endDate" column="END_DATE" />
+	</resultMap>
+	
+	<select id="selectOne" resultMap="outingResultMap">
+		<!-- 특정 게시글 조회 -->
+		SELECT * FROM OUTING WHERE OUTING_DATE = #{outingDate}
+	</select>
+	
+	<select id="selectByDateRange" resultMap="outingResultMap">
+    SELECT *FROM OUTING
+    WHERE OUTING_DATE BETWEEN #{startDate} AND #{endDate}
+    ORDER BY OUTING_DATE DESC
+	</select>
+</mapper>

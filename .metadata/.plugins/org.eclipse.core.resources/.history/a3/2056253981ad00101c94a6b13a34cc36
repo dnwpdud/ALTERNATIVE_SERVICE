@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>외출대장</title>
+<style>
+    body { font-family: '맑은 고딕', sans-serif; }
+    h2 { text-align: center; margin-bottom: 20px; }
+
+    .header-table, .header-table td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    .header-table {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .main-table {
+        width: 100%;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .main-table th, .main-table td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+
+    <h2>외 출 대 장</h2>
+
+    <!-- 상단 기본 정보 -->
+    <table class="header-table">
+        <tr>
+            <td>허가일자</td>
+            <td>2025년 9월 1일 월요일</td>
+            <td>과장</td>
+            <td>(인)</td>
+            <td>소장</td>
+            <td>(인)</td>
+        </tr>
+        <tr>
+            <td colspan="6">2025-09-01부터 ~ 2025-09-07까지</td>
+        </tr>
+    </table>
+
+    <!-- 메인 데이터 테이블 -->
+    <table class="main-table">
+        <tr>
+            <th>연번</th>
+            <th>복무번호</th>
+            <th>성명</th>
+            <th>외출구분</th>
+            <th>사유</th>
+            <th>외출일</th>
+            <th>요일</th>
+            <th>비고 및 특정시간</th>
+        </tr>
+        <c:forEach var="outing" items="${outingList}" varStatus="status">
+            <tr>
+                <td>${status.index + 1}</td>
+                <td>${outing.serviceNo}</td>
+                <td>${outing.memberName}</td>
+                <td>${outing.outingType}</td>
+                <td>${outing.reason}</td>
+                <td>${outing.outingDate}</td>
+                <td>${outing.dayOfWeek}</td>
+                <td>${outing.remarks}</td>
+            </tr>
+        </c:forEach>
+    </table>
+
+</body>
+</html>

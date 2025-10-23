@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		id="outingResultMap">
 		<id property="outingId" column="OUTING_ID" /> 
 		<result property="crewId" column="CREW_ID" />
-    	<result property="serviceNo" column="SERVICE_NO" />
+    	<result property="crewNo" column="CREW_NO" />
     	<result property="memberName" column="MEMBER_NAME" />
     	<result property="outingType" column="OUTING_TYPE" />
     	<result property="reason" column="REASON" />
