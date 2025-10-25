@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.web.as.domain.OutingDTO;
 import com.web.as.domain.OutingVO;
 import com.web.as.persistence.OutingMapper;
 import com.web.as.service.OutingService;
@@ -50,7 +51,7 @@ public class OutingController {
 		log.info("startDate : " + startDate);
 		log.info("endDate : " + endDate);
 		
-		List<OutingVO> outingList = outingService.selectByDateRange(startDate, endDate);
+		List<OutingDTO> outingList = outingService.selectByDateRange(startDate, endDate);
 		log.info("outingList : " + outingList);
 		model.addAttribute("outingList", outingList);
 	}

@@ -1,0 +1,5 @@
+package com.web.as.domain;
+
+public class OutingDTO {
+
+}

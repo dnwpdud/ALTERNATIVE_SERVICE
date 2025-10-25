@@ -21,7 +21,4 @@ public class OutingVO {
 	private Date outingDate;
 	private String dayOfWeek;
 	private String remarks;
-	
-	private String startDate;
-	private String endDate;
 }

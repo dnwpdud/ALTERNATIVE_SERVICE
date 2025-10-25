@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.web.as.domain.OutingDTO;
 import com.web.as.domain.OutingVO;
 import com.web.as.persistence.OutingMapper;
 
@@ -30,11 +31,11 @@ public class OutingServiceImple implements OutingService {
 	}
 
 	@Override
-	public List<OutingVO> selectByDateRange(String startDate, String endDate) {
+	public List<OutingDTO> selectByDateRange(String startDate, String endDate) {
 		log.info("selectByDateRange()");
 		log.info("startDate : " + startDate);
 		log.info("endDate : " + endDate);
-		List<OutingVO> OutingList = outingMapper.selectByDateRange(startDate, endDate);
+		List<OutingDTO> OutingList = outingMapper.selectByDateRange(startDate, endDate);
 		log.info("OutingList : " + OutingList);
 		return OutingList;
 	}
