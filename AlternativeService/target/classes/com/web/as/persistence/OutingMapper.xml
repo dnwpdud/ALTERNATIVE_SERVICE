@@ -17,7 +17,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</resultMap>
 	
 	<resultMap type="com.web.as.domain.OutingDTO"
-		id="outingResultMap">
+		id="outingDtoResultMap">
 		<id property="outingId" column="OUTING_ID" /> 
 		<result property="crewId" column="CREW_ID" />
     	<result property="crewNo" column="CREW_NO" />
@@ -36,7 +36,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		SELECT * FROM OUTING WHERE OUTING_DATE = #{outingDate}
 	</select>
 	
-	<select id="selectByDateRange" resultMap="outingResultMap">
+	<select id="selectByDateRange" resultMap="outingDtoResultMap">
     SELECT *FROM OUTING
     WHERE OUTING_DATE BETWEEN #{startDate} AND #{endDate}
     ORDER BY OUTING_DATE DESC

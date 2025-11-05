@@ -2,9 +2,25 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="com.mokcoding.mysite.persistence.OutingMapper"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.web.as.domain.Outing"/>
     <fullyQualifiedTypeName name="org.apache.catalina.security.SecurityConfig"/>
     <fullyQualifiedTypeName name="com.web.as.persistence.OutingMapper"/>
     <fullyQualifiedTypeName name="com.web.as.domain.OutingVO"/>
+    <fullyQualifiedTypeName name="com.web.as.service.OutingService"/>
+    <fullyQualifiedTypeName name="com.web.as.domain.OutingDTO"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+    <fullyQualifiedTypeName name="com.web.as.persistence.MemberMapper"/>
+    <fullyQualifiedTypeName name="lombok.extern.log4j.Log4j"/>
+    <fullyQualifiedTypeName name="com.web.as.service.MemberService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.web.as.domain.MemberVO"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 </qualifiedTypeNameHistroy>

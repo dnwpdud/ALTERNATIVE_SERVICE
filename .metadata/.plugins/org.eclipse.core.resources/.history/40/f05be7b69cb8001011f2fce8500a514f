@@ -1,0 +1,5 @@
+package com.web.as.service;
+
+public class MemberServiceImpl {
+
+}

@@ -1,0 +1,16 @@
+package com.web.as.persistence;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.web.as.domain.MemberVO;
+
+@Mapper
+public interface MemberMapper {
+	int insertMember(MemberVO member);
+    MemberVO getMemberById(Long memberId);
+    List<MemberVO> getAllMembers();
+    int updateMember(MemberVO member);
+    int deleteMember(Long memberId);
+}
