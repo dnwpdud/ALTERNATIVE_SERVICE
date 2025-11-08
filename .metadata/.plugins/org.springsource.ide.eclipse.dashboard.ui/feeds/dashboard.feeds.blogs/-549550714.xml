@@ -1,4 +1,209 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Nov 2025 11:12:45 GMT</lastBuildDate><item><title><![CDATA[Spring AI 1.1.0-M4 Available Now]]></title><link>https://spring.io/blog/2025/11/03/spring-ai-1-1-0-M4-available-now</link><guid isPermaLink="true">https://spring.io/blog/2025/11/03/spring-ai-1-1-0-M4-available-now</guid><dc:creator><![CDATA[markpollack]]></dc:creator><pubDate>Mon, 03 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the Spring AI engineering team and everyone who has contributed, I&apos;m happy to announce that Spring AI &lt;code&gt;1.1.0-M4&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Nov 2025 00:38:12 GMT</lastBuildDate><item><title><![CDATA[Spring for GraphQL 2.0.0-RC2 released]]></title><link>https://spring.io/blog/2025/11/04/spring-for-graphql-2-0-0-rc2-released</link><guid isPermaLink="true">https://spring.io/blog/2025/11/04/spring-for-graphql-2-0-0-rc2-released</guid><dc:creator><![CDATA[bclozel]]></dc:creator><pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I am pleased to announce that the second Spring for GraphQL 2.0 Release Candidate is now available.&lt;/p&gt;
+&lt;p&gt;This release brings back the GraphQL Java 25.x baseline as it will be released in November before our GA date.
+This also ships a new feature, the
+&lt;a href=&quot;https://github.com/spring-projects/spring-graphql/issues/1356&quot;&gt;support for &lt;code&gt;@EntityMapping&lt;/code&gt; with interface types&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;whats-next&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#whats-next&quot; aria-label=&quot;whats next permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What&apos;s next?&lt;/h2&gt;
+&lt;p&gt;We have &lt;a href=&quot;https://github.com/spring-projects/spring-graphql/wiki/Spring-for-GraphQL-2.0&quot;&gt;compiled all release notes on our wiki&lt;/a&gt;.
+Our next step is the final release next month!&lt;/p&gt;
+&lt;p&gt;2.0.0-RC2 is now available from &lt;a href=&quot;https://repo.spring.io&quot;&gt;https://repo.spring.io&lt;/a&gt; and &lt;a href=&quot;https://spring.io/blog/2025/01/21/milestones-to-central&quot;&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;how-can-you-help&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-can-you-help&quot; aria-label=&quot;how can you help permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How can you help?&lt;/h2&gt;
+&lt;p&gt;If you have general questions, please ask on &lt;a href=&quot;https://stackoverflow.com&quot;&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href=&quot;https://stackoverflow.com/tags/spring-graphql&quot;&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-graphql/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-graphql&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-graphql/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-graphql/reference&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-graphql&quot;&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[This Week in Spring - November 4th, 2025]]></title><link>https://spring.io/blog/2025/11/04/this-week-in-spring-november-4th-2025</link><guid isPermaLink="true">https://spring.io/blog/2025/11/04/this-week-in-spring-november-4th-2025</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! Welcome to another all-out installment of &lt;em&gt;This Week in Spring&lt;/em&gt; wherein we attempt to recap all that&apos;s new and novel in the wild, wacky, and wonderful world of Springdom. And this week, I&apos;m doing so from an airport in Switzerland, en route to Malmo, Sweden, for the amazing Oredev conference. If you&apos;re gonna be there, don&apos;t be shy: say hi!&lt;/p&gt;
+&lt;p&gt;We&apos;ve got a lot to cover and I&apos;ve got a flight to catch so let&apos;s dive right into it, shall we?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2025/11/04/spring-ai-recursive-advisors&quot;&gt;Create Self-Improving AI Agents Using Spring AI Recursive Advisors&lt;/a&gt; - read this! This is &lt;strong&gt;super cool&lt;/strong&gt;. Well done, Spring AI team!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2025/11/04/spring-for-graphql-2-0-0-rc2-released&quot;&gt;Spring for GraphQL 2.0.0 RC2 is now available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Speaking of Spring AI, &lt;a href=&quot;https://spring.io/blog/2025/11/03/spring-ai-1-1-0-M4-available-now&quot;&gt;Spring AI 1.1.0-M4 is available now&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2025/10/31/spring-data-2025-1-0-RC2-released&quot;&gt;Spring Data 2025.1.0 RC2 is available today&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;yet another riveting installment on the road to GA, this post looking at the newly modularized Spring Boot 4 architecture](&lt;a href=&quot;https://spring.io/blog/2025/10/28/modularizing-spring-boot&quot;&gt;https://spring.io/blog/2025/10/28/modularizing-spring-boot&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2025/10/31/spring-framework-7&quot;&gt;Spring Framework 7 RC3 is available now!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The AI space has a benchmarking problem, &lt;a href=&quot;https://spring.io/blog/2025/10/28/agents-and-benchmarks&quot;&gt;but the Spring AI team have some good ideas on how to fix it!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2025/10/28/spring-tools-4-32-1-released&quot;&gt;Spring Tools 4.32.1 is now available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;In last week&apos;s installment of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to &lt;a href=&quot;https://spring.io/blog/2025/10/30/a-bootiful-podcast-philip-krenn&quot;&gt;Elastic developer advocate extraordinaiire Philip Krenn&lt;/a&gt; about logging&lt;/li&gt;
+&lt;li&gt;I love Amazon Bedrock&apos;s prompt caching support, &lt;a href=&quot;https://spring.io/blog/2025/10/30/spring-ai-bedrock-prompt-caching-blog&quot;&gt;now integrated into Spring AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;reactive&lt;/em&gt; support for &lt;a href=&quot;https://spring.io/blog/2025/10/29/spring-pulsar-reactive-discontinued&quot;&gt;Spring for Apache Pulsar will be discontinued&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Create Self-Improving AI Agents Using Spring AI Recursive Advisors]]></title><link>https://spring.io/blog/2025/11/04/spring-ai-recursive-advisors</link><guid isPermaLink="true">https://spring.io/blog/2025/11/04/spring-ai-recursive-advisors</guid><dc:creator><![CDATA[tzolov]]></dc:creator><pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;img style=&quot;float: center; display: block; margin: auto;&quot; src=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/_images/advisors-flow.jpg&quot; width=&quot;250&quot; align=&quot;right&quot;&gt;
+&lt;p&gt;The Spring AI &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/chatclient.html&quot;&gt;ChatClient&lt;/a&gt; offers a fluent API for communicating with an AI model.
+The fluent API provides methods for building the constituent parts of a prompt that gets passed to the AI model as input.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/advisors.html&quot;&gt;Advisors&lt;/a&gt; are a key part of the fluent API that intercept, modify, and enhance AI-driven interactions.
+The key benefits include encapsulating common Generative AI patterns, transforming data sent to and from Large Language Models (LLMs), and providing portability across various models and use cases.&lt;/p&gt;
+&lt;p&gt;Advisors process &lt;code&gt;ChatClientRequest&lt;/code&gt; and &lt;code&gt;ChatClientResponse&lt;/code&gt; objects.
+The framework chains advisors by their &lt;code&gt;getOrder()&lt;/code&gt; values (lower values execute first), with the final advisor calling the LLM.&lt;/p&gt;
+&lt;p&gt;Spring AI provides built-in advisors for &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/chat-memory.html#_memory_in_chat_client&quot;&gt;Conversation Memory&lt;/a&gt;, &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/retrieval-augmented-generation.html#_advisors&quot;&gt;Retrieval Augmented Generation (RAG)&lt;/a&gt;, Logging, and Guardrails. Developers can also create custom advisors.&lt;/p&gt;
+&lt;p&gt;Typical advisor structure:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class MyAdvisor implements CallAdvisor {
+    
+    // 1. Sets the advisor orders
+    public int getOrder() { return MY_ADVISOR_ORDER; } 
+
+    // 2. Sets the advisor name
+    public String getName() { return MY_ADVISOR_NAME; } 
+
+    public ChatClientResponse adviseCall(ChatClientRequest request, CallAdvisorChain chain) {
+        // 3. Pre-process the request (modify, validate, log, etc.)
+        request = preProcess(request);
+        // 4. Call the next advisor in the chain
+        ChatClientResponse response = chain.nextCall(request);
+        // 5. Post-process the response (modify, validate, log, etc.)
+        return postProcess(response);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;recursive-advisors&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#recursive-advisors&quot; aria-label=&quot;recursive advisors permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Recursive Advisors&lt;/h2&gt;
+&lt;div style=&quot;display: flex; gap: 2rem; align-items: flex-start;&quot;&gt;
+&lt;div style=&quot;flex: 1;&quot;&gt;
+&lt;p&gt;Starting with version &lt;code&gt;1.1.0-M4&lt;/code&gt;, Spring AI introduces &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/advisors-recursive.html&quot;&gt;Recursive Advisors&lt;/a&gt;, enabling looping through the advisor chain multiple times to support iterative workflows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tool calling loops&lt;/strong&gt;: Executing multiple tools in sequence, where each tool&apos;s output informs the next decision&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output validation&lt;/strong&gt;: Validating structured responses and retrying with feedback when validation fails&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Retry logic&lt;/strong&gt;: Refining requests based on response quality or external criteria&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evaluation flows&lt;/strong&gt;: Evaluating and modifying responses before delivery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agentic loops&lt;/strong&gt;: Building autonomous agents that plan, execute, and iterate on tasks by analyzing results and determining next actions until a goal is achieved&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Traditional single-pass advisor patterns cannot adequately handle these scenarios.&lt;/p&gt;
+&lt;p&gt;Recursive advisors loop through the downstream advisor chain multiple times, repeatedly calling the LLM until a condition is met.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;CallAdvisorChain.copy(CallAdvisor after)&lt;/code&gt; method creates a sub-chain containing only downstream advisors, enabling controlled iteration while maintaining proper ordering and observability, and preventing re-execution of upstream advisors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;flex: 0.95;&quot;&gt;
+&lt;img style=&quot;float: center; display: block; margin: auto;&quot; src=&quot;https://github.com/spring-io/spring-io-static/blob/main/blog/tzolov/20251031/spring-ai-recursive-advisors-flow.png?raw=true&quot; width=&quot;280&quot;&gt;
+&lt;div style=&quot;font-size: 0.8em;&quot;&gt;
+&lt;p&gt;&lt;em&gt;The diagram illustrates how recursive advisors enable iterative processing by allowing the flow to loop back through the advisor chain multiple times. Unlike traditional single-pass execution, recursive advisors can revisit previous advisors based on response conditions, creating sophisticated iterative workflows between the client, advisors, and LLM.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Here&apos;s the basic pattern for implementing a recursive advisor:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class MyRecursiveAdvisor implements CallAdvisor {
+    
+    @Override
+    public ChatClientResponse adviseCall(ChatClientRequest request, CallAdvisorChain chain) {
+        
+        // Call the chain initially
+        ChatClientResponse response = chain.nextCall(request);
+        
+        // Check if we need to retry
+        while (!isConditionMet(response)) {
+            // Modify the request based on the response
+            ChatClientRequest modifiedRequest = modifyRequest(request, response);
+            
+            // Create a sub-chain and recurse
+            response = chain.copy(this).nextCall(modifiedRequest);
+        }
+        
+        return response;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The key difference from non-recursive advisors is using &lt;code&gt;chain.copy(this).nextCall(...)&lt;/code&gt; instead of &lt;code&gt;chain.nextCall(...)&lt;/code&gt; to iterate on a copy of the inner chain.
+This ensures each iteration goes through the complete downstream chain, allowing other advisors to observe and intercept while maintaining proper observability.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;?-important-note&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EF%B8%8F-important-note&quot; aria-label=&quot;? important note permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;?? Important Note&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Recursive Advisors are a new experimental feature in Spring AI 1.1.0-M4.&lt;/strong&gt; They are non-streaming only, requires careful advisor ordering, can increase costs due to multiple LLM calls.&lt;/p&gt;
+&lt;p&gt;Be especially careful with inner advisors that maintain external state - they may require extra attention to maintain correctness across iterations.&lt;/p&gt;
+&lt;p&gt;Always set termination conditions and retry limits to prevent infinite loops.&lt;/p&gt;
+&lt;p&gt;Consider whether your use case benefits more from recursive advisors or from implementing an explicit while loop around ChatClient calls in your application code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;built-in-recursive-advisors&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#built-in-recursive-advisors&quot; aria-label=&quot;built in recursive advisors permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Built-in Recursive Advisors&lt;/h2&gt;
+&lt;p&gt;Spring AI 1.1.0-M4 provides two recursive advisors:&lt;/p&gt;
+&lt;h3 id=&quot;toolcalladvisor&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#toolcalladvisor&quot; aria-label=&quot;toolcalladvisor permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/advisors-recursive.html#_toolcalladvisor&quot;&gt;ToolCallAdvisor&lt;/a&gt;&lt;/h3&gt;
+&lt;div style=&quot;display: flex; gap: 2rem; align-items: flex-start;&quot;&gt;
+&lt;div style=&quot;flex: 0.9;&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Default ToolCalling support&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By default, the &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/tools.html#_framework_controlled_tool_execution&quot;&gt;Spring AI Tool Execution&lt;/a&gt; is implemented inside each &lt;code&gt;ChatModel&lt;/code&gt; implementation using a &lt;code&gt;ToolCallingManager&lt;/code&gt;.
+This means that the tool calling requests and response flow is opaque for the ChatClient Advisors as it happens outside the advisor execution chain.&lt;/p&gt;
+&lt;img style=&quot;float: center; display: block; margin: auto;&quot; src=&quot;https://github.com/spring-io/spring-io-static/blob/main/blog/tzolov/20251031/spring-ai-in-chatmodel-toolcalling.png?raw=true&quot; width=&quot;400&quot;&gt;
+&lt;/div&gt;
+&lt;div style=&quot;flex: 1;&quot;&gt;
+&lt;p&gt;&lt;strong&gt;ToolCallAdvisor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Leveraging the &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/tools.html#_user_controlled_tool_execution&quot;&gt;User-Controlled tool execution&lt;/a&gt;, the &lt;code&gt;ToolCallAdvisor&lt;/code&gt; implements the tool calling loop within the advisor chain, providing explicit control over tool execution rather than delegating to the model&apos;s internal tool execution&lt;/p&gt;
+&lt;img style=&quot;float: center; display: block; margin: auto;&quot; src=&quot;https://github.com/spring-io/spring-io-static/blob/main/blog/tzolov/20251031/spring-ai-advisor-toolcalling.png?raw=true&quot; width=&quot;450&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;Loops until no more tool calls are present&lt;/li&gt;
+&lt;li&gt;Enables other advisors (such as Advisor ABC) to intercept and alter each tool call request and response&lt;/li&gt;
+&lt;li&gt;Supports &quot;return direct&quot; functionality&lt;/li&gt;
+&lt;li&gt;Disables the chat-model&apos;s internal tool execution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example Usage:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;var toolCallAdvisor = ToolCallAdvisor.builder()
+    .toolCallingManager(toolCallingManager)
+    .advisorOrder(BaseAdvisor.HIGHEST_PRECEDENCE + 300)
+    .build();
+        
+public record Request(String location) {}
+
+var weatherTool = FunctionToolCallback.builder(&quot;getWeather&quot;, (Request request) -&gt; &quot;15.0¡ÆC&quot;)
+        .description(&quot;Gets the weather for a location&quot;)
+        .inputType(Request.class)
+        .build();
+
+var chatClient = ChatClient.builder(chatModel)
+    .defaultToolCallbacks(weatherTool) // Tools registration
+    .defaultAdvisors(toolCallAdvisor) // Tool Call Execution as Advisor
+    .build();
+
+String response = chatClient.prompt()
+    .user(&quot;What&apos;s the weather in Paris and Amsterdam and convert the temperature to Fahrenheit?&quot;)
+    .call()
+    .content();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: By default, the ToolCallAdvisor&apos;s order is set close to &lt;code&gt;Ordered.HIGHEST_PRECEDENCE&lt;/code&gt; to ensure the advisor executes first in the chain (first for request processing, last for response processing), allowing inner advisors to intercept and process tool request and response messages.&lt;/p&gt;
+&lt;p&gt;When a tool execution has &lt;code&gt;returnDirect=true&lt;/code&gt;, the advisor executes the tool, detects the flag, breaks the loop, and returns the output directly to the client without sending it to the LLM. This reduces latency when the tool&apos;s output is the final answer.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;? Demo Project&lt;/strong&gt;: See a complete working example of the ToolCallAdvisor in the &lt;a href=&quot;https://github.com/spring-projects/spring-ai-examples/tree/main/advisors/recursive-advisor-demo&quot;&gt;Recursive Advisor Demo&lt;/a&gt; project.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;structuredoutputvalidationadvisor&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#structuredoutputvalidationadvisor&quot; aria-label=&quot;structuredoutputvalidationadvisor permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.1-SNAPSHOT/api/advisors-recursive.html#_structuredoutputvalidationadvisor&quot;&gt;StructuredOutputValidationAdvisor&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;StructuredOutputValidationAdvisor&lt;/code&gt; validates structured JSON output against a generated schema and retries if validation fails:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically generates JSON schemas from expected output types&lt;/li&gt;
+&lt;li&gt;Validates LLM responses againsts the schema and retries with validation error messages&lt;/li&gt;
+&lt;li&gt;Configurable maximum retry attempts&lt;/li&gt;
+&lt;li&gt;Supports custom &lt;code&gt;ObjectMapper&lt;/code&gt; for JSON processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example Usage:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public record ActorFilms(String actor, List&amp;#x3C;String&gt; movies) {}
+
+var validationAdvisor = StructuredOutputValidationAdvisor.builder()
+    .outputType(ActorFilms.class)
+    .maxRepeatAttempts(3)
+    .build();
+
+var chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(validationAdvisor)
+    .build();
+
+ActorFilms actorFilms = chatClient.prompt()
+    .user(&quot;Generate the filmography for Tom Hanks&quot;)
+    .call()
+    .entity(ActorFilms.class);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When validation fails, the advisor augments the prompt with error details and retries up to the configured maximum attempts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: By default, the StructuredOutputValidationAdvisor&apos;s &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/advisors.html#_advisor_order&quot;&gt;order&lt;/a&gt; is set close to &lt;code&gt;Ordered.LOWEST_PRECEDENCE&lt;/code&gt; to ensure the advisor executes toward the end of the chain (but before the model call), meaning it&apos;s last for request processing and first for response processing.&lt;/p&gt;
+&lt;h2 id=&quot;best-practices&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#best-practices&quot; aria-label=&quot;best practices permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Best Practices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Set Clear Termination Conditions&lt;/strong&gt;: Ensure loops have definite exit conditions to prevent infinite loops&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Appropriate Ordering&lt;/strong&gt;: Place recursive advisors early in the chain to allow other advisors to observe iterations, or late to prevent observation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provide Feedback&lt;/strong&gt;: Augment retry requests with information about why the retry is needed to help the LLM improve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Limit Iterations&lt;/strong&gt;: Set maximum attempt limits to prevent runaway execution&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitor Execution&lt;/strong&gt;: Use Spring AI&apos;s observability features to track iteration counts and performance&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose the Right Approach&lt;/strong&gt;: Evaluate whether recursive advisors or explicit while loops around ChatClient calls better suit your specific use case and architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;performance-considerations&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#performance-considerations&quot; aria-label=&quot;performance considerations permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance Considerations&lt;/h3&gt;
+&lt;p&gt;Recursive advisors increase the number of LLM calls, affecting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: More API calls increase costs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Latency&lt;/strong&gt;: Multiple iterations add processing time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Token Usage&lt;/strong&gt;: Each iteration consumes additional tokens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To optimize set reasonable retry limits and monitor iteration counts.
+Cache intermediate results when possible&lt;/p&gt;
+&lt;h2 id=&quot;resources&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#resources&quot; aria-label=&quot;resources permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/advisors-recursive.html&quot;&gt;Recursive Advisors Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/advisors.html&quot;&gt;Advisors API Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chatclient.html&quot;&gt;ChatClient API Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/spring-projects/spring-ai&quot;&gt;Spring AI GitHub Repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Spring AI 1.1.0-M4 Available Now]]></title><link>https://spring.io/blog/2025/11/03/spring-ai-1-1-0-M4-available-now</link><guid isPermaLink="true">https://spring.io/blog/2025/11/03/spring-ai-1-1-0-M4-available-now</guid><dc:creator><![CDATA[markpollack]]></dc:creator><pubDate>Mon, 03 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the Spring AI engineering team and everyone who has contributed, I&apos;m happy to announce that Spring AI &lt;code&gt;1.1.0-M4&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
 &lt;p&gt;This patch release delivers important stability improvements and bug fixes.&lt;/p&gt;
 &lt;h2 id=&quot;release-summary&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#release-summary&quot; aria-label=&quot;release summary permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Release Summary&lt;/h2&gt;
 &lt;p&gt;This release includes &lt;a href=&quot;https://github.com/spring-projects/spring-ai/releases/tag/v1.1.0-M4&quot;&gt;340 improvements, bug fixes, and documentation updates&lt;/a&gt;. The focus of this patch release is on:&lt;/p&gt;
@@ -80,26 +285,4 @@ Thanks to all contributors who made this release possible:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/zhouyanming&quot;&gt;Yanming Zhou (@zhouyanming)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/luyunkui95&quot;&gt;YunKui Lu (@luyunkui95)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/lukasz.jernas&quot;&gt;¨©ukasz Jerna? (@lukasz.jernas)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Spring Data 2025.1.0-RC2 released]]></title><link>https://spring.io/blog/2025/10/31/spring-data-2025-1-0-RC2-released</link><guid isPermaLink="true">https://spring.io/blog/2025/10/31/spring-data-2025-1-0-RC2-released</guid><dc:creator><![CDATA[christophstrobl]]></dc:creator><pubDate>Fri, 31 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce the second release candidate (RC) for the next Spring Data generation.&lt;/p&gt;
-&lt;p&gt;The RC picks up Spring Framework RC3 and Spring HATEOAS RC2 and ships mainly refinements as well as some structural cleanups in Spring Data Commons.
-You can find the complete changelog in the &lt;a href=&quot;https://github.com/spring-projects/spring-data-commons/wiki/Spring-Data-2025.1-Release-Notes&quot;&gt;Spring Data 2025.1 Release Notes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Going forward, we&apos;re planning to release Spring Data 2025.1 GA in mid-November, aligning with the upcoming Spring Framework 7.0 release.&lt;/p&gt;
-&lt;h2 id=&quot;202510-rc2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#202510-rc2&quot; aria-label=&quot;202510 rc2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2025.1.0-RC2&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Spring Data Commons &lt;code&gt;4.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/docs/4.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/reference/4.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-commons/releases/tag/4.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data JPA &lt;code&gt;4.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/docs/4.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/reference/4.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-jpa/releases/tag/4.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data MongoDB &lt;code&gt;5.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/docs/5.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/reference/5.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-mongodb/releases/tag/5.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data Neo4j &lt;code&gt;8.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/docs/8.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/reference/8.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-neo4j/releases/tag/8.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data KeyValue &lt;code&gt;4.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/docs/4.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/reference/4.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-keyvalue/releases/tag/4.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data for Apache Cassandra &lt;code&gt;5.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/docs/5.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/reference/5.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-cassandra/releases/tag/5.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data LDAP &lt;code&gt;4.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/docs/4.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/reference/4.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-ldap/releases/tag/4.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data REST &lt;code&gt;5.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/docs/5.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/reference/5.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-rest/releases/tag/5.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data Redis &lt;code&gt;4.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/docs/4.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/reference/4.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-redis/releases/tag/4.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data Elasticsearch &lt;code&gt;6.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/docs/6.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/reference/6.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-elasticsearch/releases/tag/6.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data Couchbase &lt;code&gt;6.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/docs/6.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/reference/6.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-couchbase/releases/tag/6.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spring Data Relational &lt;code&gt;4.0 RC2&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/relational/docs/4.0.0-RC2/api/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/relational/reference/4.0/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-relational/releases/tag/4.0.0-RC2&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Spring Framework 7.0.0-RC3 available now]]></title><link>https://spring.io/blog/2025/10/31/spring-framework-7</link><guid isPermaLink="true">https://spring.io/blog/2025/10/31/spring-framework-7</guid><dc:creator><![CDATA[snicoll]]></dc:creator><pubDate>Fri, 31 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce the third release candidate for Spring Framework 7.0. This should be our last release candidate before our GA version in November.
-We have compiled all the upgrade information, new features and deprecations on the &lt;a href=&quot;https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-7.0-Release-Notes&quot;&gt;Spring Framework 7.0 release notes&lt;/a&gt; preview page.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;7.0.0-RC3&lt;/code&gt; ships with &lt;a href=&quot;https://github.com/spring-projects/spring-framework/releases/tag/v7.0.0-RC3&quot;&gt;17 new features, fixes, and documentation improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-framework&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-framework/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-framework/reference/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A Bootiful Podcast: Elastic's developer advocate extraordinairre Philip Krenn on the state of logging]]></title><link>https://spring.io/blog/2025/10/30/a-bootiful-podcast-philip-krenn</link><guid isPermaLink="true">https://spring.io/blog/2025/10/30/a-bootiful-podcast-philip-krenn</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Thu, 30 Oct 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! In this installment, we talk to my friend and Elastic&apos;s developer advocate extraordinairre Philip Krenn on the state of logging&lt;/p&gt;
-&lt;iframe title=&quot;Elastic¡¯s developer advocate extraordinairre Philip Krenn on the state of logging&quot; allowtransparency=&quot;true&quot; height=&quot;300&quot; width=&quot;100%&quot; style=&quot;border: none; min-width: min(100%, 430px);height:300px;&quot; scrolling=&quot;no&quot; data-name=&quot;pb-iframe-player&quot; src=&quot;https://www.podbean.com/player-v2/?from=embed&amp;i=bpysu-19ac367-pb&amp;square=1&amp;share=1&amp;download=1&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;rtl=0&amp;logo_link=&amp;btn-skin=7&amp;size=300&quot; loading=&quot;lazy&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
