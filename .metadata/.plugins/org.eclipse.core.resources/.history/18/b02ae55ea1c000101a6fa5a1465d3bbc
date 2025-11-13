@@ -48,11 +48,4 @@ public class MemberController {
     public MemberVO getMember(Model model, Integer memberId) {
         return memberService.readMember(memberId);
     }
-	
-	// join.jsp 페이지 호출
-		@GetMapping("/join")
-		public void joinGET() {
-			log.info("joinGET()");
-		}
-		
 }
