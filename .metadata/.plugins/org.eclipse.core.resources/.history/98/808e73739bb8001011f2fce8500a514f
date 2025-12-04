@@ -1,5 +1,0 @@
-package com.web.as.persistence;
-
-public interface MemberMapper {
-
-}
