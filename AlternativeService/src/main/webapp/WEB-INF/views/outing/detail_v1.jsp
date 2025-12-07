@@ -1,0 +1,121 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>외출계획표</title>
+
+<style>
+    body { font-family: '맑은 고딕', sans-serif; }
+
+    .section-title {
+        width: 100%;
+        border: 2px solid #000;
+        border-collapse: collapse;
+        margin-top: 25px;
+        font-weight: bold;
+    }
+    .section-title td {
+        border: 2px solid #000;
+        padding: 6px;
+        font-size: 16px;
+    }
+
+    .date-header {
+        background: #f0f6ff;
+        text-align: left;
+        font-weight: bold;
+        padding: 8px 10px;
+        border: 2px solid #000;
+        border-bottom: none;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .main-table {
+        width: 100%;
+        border: 2px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .main-table th {
+        border: 1px solid #000;
+        padding: 6px;
+        background: #e8f2ff;
+        font-weight: bold;
+    }
+    .main-table td {
+        border: 1px solid #000;
+        padding: 6px;
+    }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center; margin-bottom:20px;">외 출 계 획 표</h2>
+
+<!-- 날짜 총원 계산용 변수 -->
+<c:set var="currentDate" value="" />
+<c:set var="count" value="0" />
+
+<!-- 날짜별 총원 계산용 루프 -->
+<c:forEach var="o" items="${outingList}" varStatus="status">
+
+    <c:choose>
+        <c:when test="${currentDate == o.OUTING_DATE}">
+            <c:set var="count" value="${count + 1}" />
+        </c:when>
+
+        <c:otherwise>
+            <c:set var="currentDate" value="${o.OUTING_DATE}" />
+            <c:set var="count" value="1" />
+        </c:otherwise>
+    </c:choose>
+
+    <!-- 다음 데이터와 날짜가 다르면 → 출력 -->
+    <c:if test="${(status.index + 1) == fn:length(outingList)
+                 or outingList[status.index + 1].OUTING_DATE != o.OUTING_DATE}">
+
+        <table class="section-title">
+            <tr>
+                <td>총원 ${count}</td>
+            </tr>
+        </table>
+
+        <div class="date-header">
+            ${o.OUTING_DATE} (${o.DAY_OF_WEEK})
+        </div>
+
+        <table class="main-table">
+            <tr>
+                <th>외출구분</th>
+                <th>복무번호</th>
+                <th>성명</th>
+                <th>근무지</th>
+                <th>비고</th>
+            </tr>
+
+            <c:forEach var="d" items="${outingList}">
+                <c:if test="${d.OUTING_DATE == o.OUTING_DATE}">
+                    <tr>
+                        <td>${d.OUTING_TYPE}</td>
+                        <td>${d.CREW_NO}</td>
+                        <td>${d.MEMBER_NAME}</td>
+                        <td>${d.REASON}</td>
+                        <td>${d.REMARKS}</td>
+                    </tr>
+                </c:if>
+            </c:forEach>
+
+        </table>
+
+    </c:if>
+</c:forEach>
+
+</body>
+</html>
