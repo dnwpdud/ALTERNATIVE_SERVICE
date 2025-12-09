@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.web.as.persistence.CrewMapper">
+
+    <!-- Result Map -->
+    <resultMap id="crewResultMap" type="com.web.as.domain.CrewVO">
+        <id property="crewId" column="CREW_ID"/>
+        <result property="memberId" column="MEMBER_ID"/>
+        <result property="crewName" column="CREW_NAME"/>
+        <result property="crewPhone" column="CREW_PHONE"/>
+        <result property="crewCallDate" column="CREW_CALL_DATE"/>
+        <result property="crewRole" column="CREW_ROLE"/>
+        <result property="crewScore" column="CREW_SCORE"/>
+        <result property="room" column="ROOM"/>
+    </resultMap>
+
+    <!-- Create -->
+    <insert id="insertCrew" parameterType="com.web.as.domain.CrewVO"
+            useGeneratedKeys="true" keyProperty="crewId">
+        INSERT INTO CREW
+        (CREW_ID, MEMBER_ID, CREW_NAME, CREW_PHONE, CREW_CALL_DATE, CREW_ROLE, CREW_SCORE, ROOM)
+        VALUES
+        (CREW_SEQ.NEXTVAL, #{memberId}, #{crewName}, #{crewPhone}, #{crewCallDate},
+         #{crewRole}, #{crewScore}, #{room})
+    </insert>
+
+    <!-- Read by ID -->
+    <select id="getCrewById" parameterType="int" resultMap="crewResultMap">
+        SELECT *
+        FROM CREW
+        WHERE CREW_ID = #{crewId}
+    </select>
+
+    <!-- Read All -->
+    <select id="getAllCrews" resultMap="crewResultMap">
+        SELECT *
+        FROM CREW
+        ORDER BY CREW_ID
+    </select>
+
+    <!-- Update -->
+    <update id="updateCrew" parameterType="com.web.as.domain.CrewVO">
+        UPDATE CREW
+        SET MEMBER_ID = #{memberId},
+            CREW_NAME = #{crewName},
+            CREW_PHONE = #{crewPhone},
+            CREW_CALL_DATE = #{crewCallDate},
+            CREW_ROLE = #{crewRole},
+            CREW_SCORE = #{crewScore},
+            ROOM = #{room}
+        WHERE CREW_ID = #{crewId}
+    </update>
+
+    <!-- Delete -->
+    <delete id="deleteCrew" parameterType="int">
+        DELETE FROM CREW
+        WHERE CREW_ID = #{crewId}
+    </delete>
+
+</mapper>

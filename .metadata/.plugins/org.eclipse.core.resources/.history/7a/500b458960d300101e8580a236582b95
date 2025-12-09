@@ -10,6 +10,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class CrewVO {
+
     private int crewId;            // CREW_ID
     private int memberId;          // MEMBER_ID
     private String crewName;       // CREW_NAME
