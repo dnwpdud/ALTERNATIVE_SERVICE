@@ -1,0 +1,5 @@
+package com.web.as.persistence;
+
+public interface CrewMapper {
+
+}
