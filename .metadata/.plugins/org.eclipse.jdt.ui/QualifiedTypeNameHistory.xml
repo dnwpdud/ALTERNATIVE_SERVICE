@@ -29,4 +29,5 @@
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer"/>
 </qualifiedTypeNameHistroy>
