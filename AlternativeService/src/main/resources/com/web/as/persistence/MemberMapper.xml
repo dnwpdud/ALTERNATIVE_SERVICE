@@ -18,6 +18,17 @@
         <result property="memberAuth" column="MEMBER_AUTH"/>
         <result property="enabled" column="ENABLED"/>
     </resultMap>
+    
+    <!-- ========================= -->
+    <!-- ResultMap : 컬럼 ↔ VO 매핑 -->
+    <!-- ========================= -->
+    
+    <resultMap id="memberRoleMap" type="com.web.as.domain.MemberRoleVO">
+        <id property="roleId" column="ROLE_ID"/>
+        <result property="memberId" column="MEMBER_ID"/>
+        <result property="roleName" column="ROLE_NAME"/>
+    </resultMap>
+    
 
     <!-- Create -->
     <insert id="insertMember" parameterType="com.web.as.domain.MemberVO" useGeneratedKeys="true" keyProperty="memberId">
@@ -54,4 +65,65 @@
         DELETE FROM MEMBER WHERE MEMBER_ID = #{memberId}
     </delete>
 
+	<!-- ============================================================== -->
+	
+	<!-- ========================= -->
+    <!-- 권한 등록 -->
+    <!-- ========================= -->
+    <insert id="insertMemberRole">
+        INSERT INTO MEMBER_ROLE (
+            ROLE_ID,
+            MEMBER_ID,
+            ROLE_NAME
+        ) VALUES (
+            #{roleId},
+            #{memberId},
+            #{roleName}
+        )
+    </insert>
+
+    <!-- ========================= -->
+    <!-- 회원 ID로 권한 조회 -->
+    <!-- ========================= -->
+    <select id="selectRolesByMemberId"
+            parameterType="string"
+            resultMap="memberRoleMap">
+        SELECT
+            ROLE_ID,
+            MEMBER_ID,
+            ROLE_NAME
+        FROM MEMBER_ROLE
+        WHERE MEMBER_ID = #{memberId}
+    </select>
+
+    <!-- ========================= -->
+    <!-- ROLE_ID로 단건 조회 -->
+    <!-- ========================= -->
+    <select id="selectRoleByRoleId"
+            parameterType="long"
+            resultMap="memberRoleMap">
+        SELECT
+            ROLE_ID,
+            MEMBER_ID,
+            ROLE_NAME
+        FROM MEMBER_ROLE
+        WHERE ROLE_ID = #{roleId}
+    </select>
+
+    <!-- ========================= -->
+    <!-- 권한 삭제 (ROLE_ID 기준) -->
+    <!-- ========================= -->
+    <delete id="deleteMemberRole">
+        DELETE FROM MEMBER_ROLE
+        WHERE ROLE_ID = #{roleId}
+    </delete>
+
+    <!-- ========================= -->
+    <!-- 특정 회원 권한 전체 삭제 -->
+    <!-- ========================= -->
+    <delete id="deleteRolesByMemberId">
+        DELETE FROM MEMBER_ROLE
+        WHERE MEMBER_ID = #{memberId}
+    </delete>
+	
 </mapper>
