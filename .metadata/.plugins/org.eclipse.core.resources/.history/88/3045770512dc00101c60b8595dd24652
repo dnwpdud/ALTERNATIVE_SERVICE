@@ -1,6 +1,6 @@
 package com.web.as.config;
 
-import org.apache.catalina.security.SecurityConfig;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 // web.xml과 동일
