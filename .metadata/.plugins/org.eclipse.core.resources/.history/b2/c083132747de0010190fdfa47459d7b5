@@ -34,14 +34,14 @@ public interface MemberService {
      * @param roleId 권한 고유 ID
      * @return 권한 정보
      */
-    MemberRoleVO getRoleByRoleId(int roleId);
+    MemberRoleVO getRoleByRoleId(Long roleId);
 
     /**
      * ROLE_ID 기준 권한 삭제
      *
      * @param roleId 권한 고유 ID
      */
-    void removeMemberRole(int roleId);
+    void removeMemberRole(Long roleId);
 
     /**
      * 회원 ID 기준 권한 전체 삭제
