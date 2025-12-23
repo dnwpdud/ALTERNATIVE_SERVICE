@@ -30,61 +30,23 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public MemberVO readMember(int memberId) {
-	    // 회원 단건 조회 시작 로그
-	    log.info("readMember() 호출");
-	    log.info("memberId = " + memberId);
-
-	    // 회원 단건 조회
-	    MemberVO member = memberMapper.getMemberById(memberId);
-
-	    // 조회 결과 로그
-	    log.info("조회 결과 member = " + member);
-
-	    return member;
+		return memberMapper.getMemberById(memberId);
 	}
 
 	@Override
 	public List<MemberVO> readAllMembers() {
-	    // 회원 전체 조회 시작 로그
-	    log.info("readAllMembers() 호출");
-
-	    // 회원 전체 조회
-	    List<MemberVO> memberList = memberMapper.getAllMembers();
-
-	    // 조회 결과 로그
-	    log.info("전체 회원 수 = " + memberList.size());
-
-	    return memberList;
+		return memberMapper.getAllMembers();
 	}
 
 	@Override
 	public int updateMember(MemberVO member) {
-	    // 회원 수정 시작 로그
-	    log.info("updateMember() 호출");
-	    log.info("member = " + member);
-
-	    // 회원 수정 실행
-	    int updateMemberResult = memberMapper.updateMember(member);
-
-	    // 회원 수정 결과 로그
-	    log.info(updateMemberResult + "행 회원 수정 완료");
-
-	    return updateMemberResult;
+		return memberMapper.updateMember(member);
 	}
 
 	@Override
 	public int deleteMember(int memberId) {
-	    // 회원 삭제 시작 로그
-	    log.info("deleteMember() 호출");
-	    log.info("memberId = " + memberId);
-
-	    // 회원 삭제 실행
-	    int deleteMemberResult = memberMapper.deleteMember(memberId);
-
-	    // 회원 삭제 결과 로그
-	    log.info(deleteMemberResult + "행 회원 삭제 완료");
-
-	    return deleteMemberResult;
+		int deleteMemberResult = memberMapper.deleteMember(memberId);
+		return deleteMemberResult;
 	}
 
 	@Override

@@ -1,0 +1,82 @@
+package com.web.as.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.web.as.domain.MemberRoleVO;
+import com.web.as.domain.MemberVO;
+import com.web.as.persistence.MemberMapper;
+import com.web.as.persistence.OutingMapper;
+
+import lombok.extern.log4j.Log4j;
+
+@Service
+@Log4j
+public class MemberServiceImpl implements MemberService {
+	
+	@Autowired
+	private MemberMapper memberMapper;
+	
+	@Override
+	public int createMember(MemberVO memberVO) {
+		log.info("createBoard()");
+		log.info("memberVO = " + memberVO);
+		int insertMemverResult = memberMapper.insertMember(memberVO);
+		log.info(insertMemverResult + "행 게시글 등록");
+		return insertMemverResult;
+	}
+
+	@Override
+	public MemberVO readMember(int memberId) {
+		return memberMapper.getMemberById(memberId);
+	}
+
+	@Override
+	public List<MemberVO> readAllMembers() {
+		return memberMapper.getAllMembers();
+	}
+
+	@Override
+	public int updateMember(MemberVO member) {
+		return memberMapper.updateMember(member);
+	}
+
+	@Override
+	public int deleteMember(int memberId) {
+		int deleteMemberResult = memberMapper.deleteMember(memberId);
+		return deleteMemberResult;
+	}
+
+	@Override
+	public void registerMemberRole(MemberRoleVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<MemberRoleVO> getRolesByMemberId(String memberId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MemberRoleVO getRoleByRoleId(int roleId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removeMemberRole(int roleId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeRolesByMemberId(String memberId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
