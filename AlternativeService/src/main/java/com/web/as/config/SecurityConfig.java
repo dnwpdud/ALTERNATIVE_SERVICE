@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 				.defaultSuccessUrl("/board/list"); // 접근 제한 설정이 되어 있지 않은 url에서 로그인 성공 시 이동할 url 설정
 
 			httpSecurity.logout().logoutUrl("/auth/logout") // logout url 설정
-				.logoutSuccessUrl("/board/list") // 로그아웃 성공 시 이동할 url 설정
+				.logoutSuccessUrl("/outing/list") // 로그아웃 성공 시 이동할 url 설정
 				.invalidateHttpSession(true); // 세션 무효화 설정
 
 
