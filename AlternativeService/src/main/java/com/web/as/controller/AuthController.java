@@ -33,5 +33,4 @@ public class AuthController {
 		        model.addAttribute("logoutMsg", "로그아웃 되었습니다!");
 		    }
 		}
-
 }

@@ -1,0 +1,60 @@
+package com.web.as.controller;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.web.as.domain.MemberVO;
+import com.web.as.service.MemberService;
+
+import lombok.extern.log4j.Log4j;
+
+@Controller
+@RequestMapping(value = "/member") 
+@Log4j
+public class MemberController {
+	private MemberService memberService;
+	
+	// 회원등록
+	@PostMapping("/register")
+    public void createMember(Model model, @RequestBody MemberVO memberVO) {
+		log.info("createMember()");
+		log.info("memberVO : " + memberVO);
+		int res = memberService.createMember(memberVO);
+		model.addAttribute("memberVO", memberVO);
+    }
+	
+	// 전체 회원 검색
+	@GetMapping("/list")
+    public void getAllMembers(Model model) {
+		List<MemberVO> memberVO = memberService.readAllMembers();
+        model.addAttribute("memberVO", memberVO);
+    }
+	
+	@PutMapping("/updata")
+	public String updateMember(@RequestBody MemberVO memberVO) {
+		memberVO.setMemberId(memberVO.getMemberId());
+	    memberService.updateMember(memberVO);
+	    return "Member updated successfully";
+	}
+	
+	@GetMapping("/detail")
+    public MemberVO getMember(Model model, Integer memberId) {
+        return memberService.readMember(memberId);
+    }
+	
+	// join.jsp 페이지 호출
+		@GetMapping("/join")
+		public void joinGET() {
+			log.info("joinGET()");
+		}
+		
+}

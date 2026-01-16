@@ -1,0 +1,29 @@
+package com.web.as.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@Getter 
+@Setter
+@ToString 
+public class MemberVO implements Serializable{
+	
+	
+	private int memberId;
+    private String crewId;
+    private String memberUid;
+    private String memberPw;
+    private String memberName;
+    private String memberEmail;
+    private String memberPhone;
+    private Date memberRegDate;
+    private String memberAuth;
+    private String enabled;
+
+}

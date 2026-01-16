@@ -1,5 +1,6 @@
 package com.web.as.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import lombok.Getter;
@@ -11,7 +12,10 @@ import lombok.ToString;
 @Getter 
 @Setter
 @ToString 
-public class MemberVO {
+public class MemberVO implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
 	private int memberId;
     private String crewId;
     private String memberUid;

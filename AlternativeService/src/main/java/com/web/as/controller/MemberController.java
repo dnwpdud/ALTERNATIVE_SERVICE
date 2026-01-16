@@ -23,6 +23,7 @@ import lombok.extern.log4j.Log4j;
 public class MemberController {
 	private MemberService memberService;
 	
+	// 회원등록
 	@PostMapping("/register")
     public void createMember(Model model, @RequestBody MemberVO memberVO) {
 		log.info("createMember()");
@@ -31,12 +32,14 @@ public class MemberController {
 		model.addAttribute("memberVO", memberVO);
     }
 	
+	// 전체 회원 검색
 	@GetMapping("/list")
     public void getAllMembers(Model model) {
 		List<MemberVO> memberVO = memberService.readAllMembers();
         model.addAttribute("memberVO", memberVO);
     }
 	
+	// 회원 업데이트
 	@PutMapping("/updata")
 	public String updateMember(@RequestBody MemberVO memberVO) {
 		memberVO.setMemberId(memberVO.getMemberId());
@@ -44,15 +47,16 @@ public class MemberController {
 	    return "Member updated successfully";
 	}
 	
+	// 회원 삭제
 	@GetMapping("/detail")
     public MemberVO getMember(Model model, Integer memberId) {
         return memberService.readMember(memberId);
     }
 	
 	// join.jsp 페이지 호출
-		@GetMapping("/join")
-		public void joinGET() {
-			log.info("joinGET()");
-		}
+	@GetMapping("/join")
+	public void joinGET() {
+		log.info("joinGET()");
+	}
 		
 }
